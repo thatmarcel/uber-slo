@@ -1,0 +1,9 @@
+Package: com.thatmarcel.tweaks.uber-slo
+Name: UberSlo
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: SSL pinning bypass and QUIC disabler for Uber Driver
+Maintainer: thatmarcel
+Author: thatmarcel
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
