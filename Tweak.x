@@ -1,19 +1,19 @@
 #import <Foundation/Foundation.h>
 
 %hook UBNetworkSecurityPolicy
-+ (NSSet*) getUberPinnedKeysFromFileURL {
-    return [NSSet set];
-}
+    + (NSSet*) getUberPinnedKeysFromFileURL {
+        return [NSSet set];
+    }
 
-+ (NSSet*) loadKeysFromBundle:(id)bundle certBundleName:(id)bundleName bundleExtension:(id)bundleExtension {
-    return [NSSet set];
-}
+    + (NSSet*) loadKeysFromBundle:(id)bundle certBundleName:(id)bundleName bundleExtension:(id)bundleExtension {
+        return [NSSet set];
+    }
 %end
 
 %hook UBNetworkSecurityDigest
-+ (id /* SecKeyRef */) getPinnedHashForPublicKey:(id)publicKey {
-    return nil;
-}
+    + (id /* SecKeyRef */) getPinnedHashForPublicKey:(id)publicKey {
+        return nil;
+    }
 %end
 
 %hook UBCronetConfiguration
